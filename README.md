@@ -40,3 +40,4 @@ This project is pre-configured for **Google Cloud Run**.
 ## 📄 License
 
 This project is open-source and available under the MIT License.
+
