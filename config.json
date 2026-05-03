@@ -1,0 +1,24 @@
+{
+  "appName": "Vote Assistant",
+  "appVersion": "1.0.0",
+  "region": "India",
+  "features": {
+    "timeline": true,
+    "quiz": true,
+    "flashcards": true,
+    "assistant": true
+  },
+  "theme": {
+    "mode": "light",
+    "primaryColor": "#2563eb",
+    "accentColor": "#f59e0b"
+  },
+  "contact": {
+    "support": "support@votewise.example.com",
+    "website": "https://votewise.example.com"
+  },
+  "deployment": {
+    "provider": "GCP",
+    "service": "Cloud Run"
+  }
+}

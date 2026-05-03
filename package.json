@@ -1,0 +1,19 @@
+{
+  "name": "vote-assistant",
+  "version": "1.0.0",
+  "description": "An interactive assistant to help users understand the election process and timelines.",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "keywords": [
+    "election",
+    "voting",
+    "assistant",
+    "education",
+    "interactive"
+  ],
+  "author": "Antigravity AI",
+  "license": "MIT"
+}

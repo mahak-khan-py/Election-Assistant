@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Assistant | Indian Election Interactive Guide</title>
+    <meta name="description" content="Vote Assistant helps you understand the Indian election process, Lok Sabha timelines, and voting steps with interactive quizzes and flashcards.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo">
+                    <span class="logo-icon">🗳️</span>
+                    <span class="logo-text">Vote Assistant</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#timeline" class="active">Timeline</a></li>
+                    <li><a href="#guide">Guide</a></li>
+                    <li><a href="#flashcards">Learn</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                </ul>
+                <button id="chat-toggle" class="btn-primary">Assistant</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div class="hero-content">
+                    <h1>India's Democracy</h1>
+                    <p>Navigate the Indian election process with ease. Your interactive guide to the world's largest democratic exercise.</p>
+                    <div class="hero-actions">
+                        <a href="#timeline" class="btn-main">Election Timeline</a>
+                        <a href="#guide" class="btn-secondary">How to Vote</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- Dynamic visual will be injected here or styled via CSS -->
+                    <div class="floating-card c1"><span>1</span> Register</div>
+                    <div class="floating-card c2"><span>2</span> Learn</div>
+                    <div class="floating-card c3"><span>3</span> Vote</div>
+                </div>
+            </section>
+
+            <section id="timeline" class="section">
+                <div class="section-header">
+                    <h2>Election Timeline</h2>
+                    <p>Key stages of the electoral journey.</p>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-track"></div>
+                    <div id="timeline-items" class="timeline-items">
+                        <!-- Timeline items will be injected by JS -->
+                    </div>
+                </div>
+                <div id="timeline-detail" class="timeline-detail">
+                    <!-- Detail view for selected timeline item -->
+                </div>
+            </section>
+
+            <section id="guide" class="section bg-light">
+                <div class="section-header">
+                    <h2>How to Vote</h2>
+                    <p>A simple 5-step guide to cast your ballot.</p>
+                </div>
+                <div class="guide-steps">
+                    <!-- Steps will be injected by JS -->
+                </div>
+            </section>
+
+            <section id="flashcards" class="section">
+                <div class="section-header">
+                    <h2>Election Flashcards</h2>
+                    <p>Master the terminology and concepts.</p>
+                </div>
+                <div class="flashcards-container">
+                    <div id="flashcard-deck" class="flashcard-deck">
+                        <!-- Flashcards will be injected by JS -->
+                    </div>
+                    <div class="deck-controls">
+                        <button id="prev-card" class="btn-icon">←</button>
+                        <span id="card-progress">1 / 10</span>
+                        <button id="next-card" class="btn-icon">→</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="quiz" class="section bg-dark">
+                <div class="quiz-container">
+                    <div class="quiz-content">
+                        <h2>Ready to Test Your Knowledge?</h2>
+                        <p>Take our quick quiz to see how much you've learned about the election process.</p>
+                        <button id="start-quiz" class="btn-accent">Start Quiz</button>
+                    </div>
+                    <div id="quiz-overlay" class="quiz-overlay hidden">
+                        <div class="quiz-card">
+                            <div class="quiz-header">
+                                <span id="quiz-step">Question 1/5</span>
+                                <button id="close-quiz" class="btn-close">×</button>
+                            </div>
+                            <div id="quiz-question" class="quiz-question"></div>
+                            <div id="quiz-options" class="quiz-options"></div>
+                            <div class="quiz-footer">
+                                <button id="next-question" class="btn-primary" disabled>Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="facts" class="section bg-light">
+                <div class="section-header">
+                    <h2>Interesting Election Facts</h2>
+                    <p>Fascinating details about the world's largest democracy.</p>
+                </div>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <div class="fact-icon">👥</div>
+                        <h3>Largest Electorate</h3>
+                        <p>India has over 960 million registered voters, more than the population of Europe and Australia combined.</p>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-icon">🏔️</div>
+                        <h3>Highest Polling Station</h3>
+                        <p>Tashigang in Himachal Pradesh is the world's highest polling station at an altitude of 15,256 feet.</p>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-icon">👤</div>
+                        <h3>One Voter Booth</h3>
+                        <p>In Banej, Gujarat, a polling booth is set up for just ONE voter who lives in the Gir Forest.</p>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-icon">🖐️</div>
+                        <h3>Indelible Ink</h3>
+                        <p>The ink is produced exclusively by Mysore Paints and Varnish Limited and has been used since 1962.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">Vote Assistant</div>
+                <p>&copy; 2026 Vote Assistant - Empowering Indian Voters.</p>
+            </div>
+        </footer>
+
+        <!-- Chat Assistant Overlay -->
+        <div id="chat-container" class="chat-container hidden">
+            <div class="chat-header">
+                <div class="chat-info">
+                    <span class="chat-avatar">🤖</span>
+                    <div>
+                        <h3>Vote Assistant</h3>
+                        <span class="status">Online</span>
+                    </div>
+                </div>
+                <button id="close-chat" class="btn-close">×</button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message system">
+                    Namaste! I'm your Vote Assistant. I can explain the entire Indian election process, from registration to the final result. How can I help you today?
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type a question...">
+                <button id="send-message" class="btn-send">Send</button>
+            </div>
+            <div class="quick-questions">
+                <button class="quick-btn">How do I get a Voter ID?</button>
+                <button class="quick-btn">What is the Model Code of Conduct?</button>
+                <button class="quick-btn">How does an EVM work?</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/data.js"></script>
+    <script src="src/app.js"></script>
+</body>
+</html>
